@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>brute maps — Privacy</title>
+<style>
+  :root { --bg:#f3f2ee; --fg:#151515; --mute:#6b6a66; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#000; --fg:#ececea; --mute:#8d8d89; } }
+  body { background:var(--bg); color:var(--fg); font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif; margin:0; padding:40px 20px; }
+  main { max-width:680px; margin:0 auto; }
+  h1 { font-family:Georgia,serif; font-weight:500; font-size:34px; margin:0 0 4px; }
+  h2 { font-size:17px; margin:32px 0 8px; }
+  p, li { color:var(--fg); }
+  .mute { color:var(--mute); font-size:14px; }
+  ul { padding-left:20px; }
+  hr { border:0; border-top:1px solid var(--mute); opacity:.3; margin:40px 0; }
+</style>
+</head>
+<body>
+<main>
+<h1>brute maps — privacy</h1>
+<p class="mute">Last updated: 6 October 2026 · <a href="#pt">Português abaixo</a></p>
+
+<p>brute maps is a navigation app made by one person. It has no account, no ads, no analytics and no tracking. Nothing about you is stored on any server of ours.</p>
+
+<h2>What stays on your phone</h2>
+<ul>
+  <li>Your location, home, work, stars, recent destinations, trip history, imported KML files and settings.</li>
+  <li>Optional keys you enter yourself (TomTom traffic, Mapillary). They are only sent to those services.</li>
+</ul>
+
+<h2>What is sent to other services, and why</h2>
+<p>To draw the map and calculate routes the app talks to open services directly from your phone. Each request carries only what that service needs:</p>
+<ul>
+  <li><b>Map tiles</b> (OpenFreeMap, maps.brute.fyi): the area of the map you are looking at.</li>
+  <li><b>Routes</b> (Valhalla by FOSSGIS, GraphHopper, OSRM; OpenTripPlanner of Porto Digital and Transitous for public transport): the start and end points of the route.</li>
+  <li><b>Search</b> (Photon by komoot, Nominatim, Overture places on maps.brute.fyi): what you type and the approximate area, to rank nearby results first.</li>
+  <li><b>Map details along the route</b> (OpenStreetMap Overpass, Wikipedia): the area around the route or the place you tap, for speed cameras, lanes, landmarks and place information.</li>
+  <li><b>Live public transport</b> (Porto Digital, Carris Metropolitana, Transitous): the area of the map or the stop you open.</li>
+  <li><b>Fuel prices</b> (DGEG, Portugal): no personal data; the full price list is downloaded.</li>
+  <li><b>Traffic</b> (TomTom, only if you add your own key): your position and route area while driving.</li>
+  <li><b>Updates</b> (GitHub, only in the version installed outside Google Play): a check for a newer version.</li>
+</ul>
+<p>These services receive your IP address like any internet request. Their own privacy policies apply. brute maps does not send them any identifier of you or your phone.</p>
+
+<h2>Location</h2>
+<p>Location is used only to show where you are and to guide you. During navigation a notification is shown while the app follows your position, including with the screen off. Location is never uploaded to us.</p>
+
+<h2>Children</h2>
+<p>The app is not directed at children and collects no personal data from anyone.</p>
+
+<h2>Contact</h2>
+<p>Bruno Quelhas — neo.quelhas@gmail.com</p>
+
+<hr>
+
+<h1 id="pt">brute maps — privacidade</h1>
+<p class="mute">Atualizado a 6 de outubro de 2026</p>
+
+<p>A brute maps é uma app de navegação feita por uma pessoa. Não tem conta, anúncios, estatísticas nem seguimento. Nada sobre si fica guardado em servidores nossos.</p>
+
+<h2>O que fica no telemóvel</h2>
+<ul>
+  <li>A sua localização, casa, trabalho, estrelas, destinos recentes, histórico de viagens, ficheiros KML importados e definições.</li>
+  <li>Chaves opcionais que introduz (trânsito TomTom, Mapillary). Só são enviadas a esses serviços.</li>
+</ul>
+
+<h2>O que vai para outros serviços, e porquê</h2>
+<p>Para desenhar o mapa e calcular rotas, a app fala diretamente com serviços abertos. Cada pedido leva só o que esse serviço precisa:</p>
+<ul>
+  <li><b>Mapa</b> (OpenFreeMap, maps.brute.fyi): a zona do mapa que está a ver.</li>
+  <li><b>Rotas</b> (Valhalla da FOSSGIS, GraphHopper, OSRM; OpenTripPlanner da Porto Digital e Transitous para transportes): o início e o fim da rota.</li>
+  <li><b>Pesquisa</b> (Photon da komoot, Nominatim, sítios Overture em maps.brute.fyi): o que escreve e a zona aproximada, para mostrar primeiro o que está perto.</li>
+  <li><b>Informação ao longo da rota</b> (Overpass do OpenStreetMap, Wikipédia): a zona da rota ou do sítio que toca, para radares, faixas, pontos de referência e informação do sítio.</li>
+  <li><b>Transportes ao vivo</b> (Porto Digital, Carris Metropolitana, Transitous): a zona do mapa ou a paragem que abre.</li>
+  <li><b>Preços dos combustíveis</b> (DGEG): nenhum dado pessoal; descarrega-se a lista de preços.</li>
+  <li><b>Trânsito</b> (TomTom, só com a sua chave): a posição e a zona da rota enquanto conduz.</li>
+  <li><b>Atualizações</b> (GitHub, só na versão instalada fora do Google Play): verificar se há versão nova.</li>
+</ul>
+<p>Estes serviços recebem o seu endereço IP, como em qualquer pedido na internet, e aplicam as suas próprias políticas de privacidade. A brute maps não lhes envia nenhum identificador seu ou do telemóvel.</p>
+
+<h2>Localização</h2>
+<p>A localização serve só para mostrar onde está e guiá-lo. Durante a navegação aparece uma notificação enquanto a app segue a sua posição, também com o ecrã desligado. A localização nunca nos é enviada.</p>
+
+<h2>Contacto</h2>
+<p>Bruno Quelhas — neo.quelhas@gmail.com</p>
+</main>
+</body>
+</html>
