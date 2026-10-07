@@ -15,12 +15,15 @@
   .mute { color:var(--mute); font-size:14px; }
   ul { padding-left:20px; }
   hr { border:0; border-top:1px solid var(--mute); opacity:.3; margin:40px 0; }
+  table { border-collapse:collapse; width:100%; font-size:14px; margin:8px 0 4px; }
+  td, th { text-align:left; vertical-align:top; padding:8px 6px; border-top:1px solid color-mix(in srgb, var(--mute) 35%, transparent); }
+  th { color:var(--mute); font-weight:600; }
 </style>
 </head>
 <body>
 <main>
 <h1>brute maps — privacy</h1>
-<p class="mute">Last updated: 6 October 2026 · <a href="#pt">Português abaixo</a></p>
+<p class="mute">Last updated: 8 October 2026 · <a href="#pt">Português abaixo</a></p>
 
 <p>brute maps is a navigation app made by one person. It has no account, no ads, no analytics and no tracking. Nothing about you is stored on any server of ours.</p>
 
@@ -44,6 +47,23 @@
 </ul>
 <p>These services receive your IP address like any internet request. Their own privacy policies apply. brute maps does not send them any identifier of you or your phone.</p>
 
+<h2>What leaves your phone, action by action</h2>
+<table>
+<tr><th>When you…</th><th>What is sent</th><th>To</th></tr>
+<tr><td>Look at the map</td><td>The area on screen</td><td>OpenFreeMap; maps.brute.fyi (offline regions, places)</td></tr>
+<tr><td>Search</td><td>What you type and the approximate area</td><td>Photon; places files on maps.brute.fyi (open data: AllThePlaces, Overture)</td></tr>
+<tr><td>Drive, cycle or walk somewhere</td><td>Start and end of the route</td><td>Valhalla (FOSSGIS) or GraphHopper; OpenStreetMap Overpass for cameras, lanes and landmarks along the route</td></tr>
+<tr><td>Take public transport</td><td>Start and end of the trip</td><td>OpenTripPlanner of Porto Digital (Porto area) or Transitous</td></tr>
+<tr><td>See live vehicles or a departure board</td><td>The area on screen or the stop</td><td>Porto Digital, Carris Metropolitana, Transitous; train positions from maps.brute.fyi</td></tr>
+<tr><td>See shared bikes</td><td>The city you are looking at</td><td>CityBikes</td></tr>
+<tr><td>Look up fuel prices</td><td>Nothing about you (the full list is downloaded)</td><td>maps.brute.fyi (DGEG data)</td></tr>
+<tr><td>Tap a landmark</td><td>The place</td><td>Wikipedia</td></tr>
+<tr><td>Add your own traffic or Mapillary key</td><td>Your position and route area while driving</td><td>TomTom or Mapillary, only if you added a key</td></tr>
+<tr><td>Open the app</td><td>A request for small settings files (no identifier)</td><td>maps.brute.fyi; GitHub for updates outside Google Play</td></tr>
+<tr><td>Save places, stars, history</td><td><b>Nothing</b>, they stay on the phone</td><td>—</td></tr>
+</table>
+<p class="mute">Every service sees your IP address, as with any internet request. brute maps never sends an account, advertising ID or device identifier.</p>
+
 <h2>Location</h2>
 <p>Location is used only to show where you are and to guide you. During navigation a notification is shown while the app follows your position, including with the screen off. Location is never uploaded to us.</p>
 
@@ -56,7 +76,7 @@
 <hr>
 
 <h1 id="pt">brute maps — privacidade</h1>
-<p class="mute">Atualizado a 6 de outubro de 2026</p>
+<p class="mute">Atualizado a 8 de outubro de 2026</p>
 
 <p>A brute maps é uma app de navegação feita por uma pessoa. Não tem conta, anúncios, estatísticas nem seguimento. Nada sobre si fica guardado em servidores nossos.</p>
 
@@ -79,6 +99,23 @@
   <li><b>Atualizações</b> (GitHub, só na versão instalada fora do Google Play): verificar se há versão nova.</li>
 </ul>
 <p>Estes serviços recebem o seu endereço IP, como em qualquer pedido na internet, e aplicam as suas próprias políticas de privacidade. A brute maps não lhes envia nenhum identificador seu ou do telemóvel.</p>
+
+<h2>O que sai do telemóvel, ação a ação</h2>
+<table>
+<tr><th>Quando…</th><th>O que vai</th><th>Para onde</th></tr>
+<tr><td>Vê o mapa</td><td>A zona no ecrã</td><td>OpenFreeMap; maps.brute.fyi (regiões offline, sítios)</td></tr>
+<tr><td>Pesquisa</td><td>O que escreve e a zona aproximada</td><td>Photon; ficheiros de sítios em maps.brute.fyi (dados abertos: AllThePlaces, Overture)</td></tr>
+<tr><td>Vai de carro, bicicleta ou a pé</td><td>O início e o fim da rota</td><td>Valhalla (FOSSGIS) ou GraphHopper; Overpass do OpenStreetMap para radares, faixas e pontos de referência na rota</td></tr>
+<tr><td>Usa transportes</td><td>O início e o fim da viagem</td><td>OpenTripPlanner da Porto Digital (área do Porto) ou Transitous</td></tr>
+<tr><td>Vê veículos ao vivo ou partidas</td><td>A zona no ecrã ou a paragem</td><td>Porto Digital, Carris Metropolitana, Transitous; posições dos comboios em maps.brute.fyi</td></tr>
+<tr><td>Vê bicicletas partilhadas</td><td>A cidade que está a ver</td><td>CityBikes</td></tr>
+<tr><td>Vê preços dos combustíveis</td><td>Nada sobre si (descarrega-se a lista toda)</td><td>maps.brute.fyi (dados da DGEG)</td></tr>
+<tr><td>Toca num monumento</td><td>O sítio</td><td>Wikipédia</td></tr>
+<tr><td>Põe a sua chave de trânsito ou Mapillary</td><td>A posição e a zona da rota enquanto conduz</td><td>TomTom ou Mapillary, só com a sua chave</td></tr>
+<tr><td>Abre a app</td><td>Um pedido de pequenos ficheiros de definições (sem identificador)</td><td>maps.brute.fyi; GitHub para atualizações fora da Google Play</td></tr>
+<tr><td>Guarda sítios, estrelas, histórico</td><td><b>Nada</b>, fica no telemóvel</td><td>—</td></tr>
+</table>
+<p class="mute">Todos os serviços veem o seu endereço IP, como em qualquer pedido na internet. A brute maps nunca envia conta, identificador de publicidade nem identificador do aparelho.</p>
 
 <h2>Localização</h2>
 <p>A localização serve só para mostrar onde está e guiá-lo. Durante a navegação aparece uma notificação enquanto a app segue a sua posição, também com o ecrã desligado. A localização nunca nos é enviada.</p>
